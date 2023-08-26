@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD App - Editar elemento</title>
+</head>
+<body>
+    <h1>Editar elemento</h1>
+    <form action="/update/{{ item.id }}" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" value="{{ item.name }}" required><br>
+        <label for="description">Descripción:</label>
+        <input type="text" name="description" value="{{ item.description }}" required><br>
+        <input type="submit" value="Guardar cambios">
+    </form>
+    <a href="/">Volver a la lista</a>
+</body>
+</html>

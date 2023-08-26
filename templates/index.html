@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD App - Lista de elementos</title>
+</head>
+<body>
+
+        <h1>Lista de Usuarios</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td> {{ item.idUsuario }}</td>
+            <td> {{ item.nombre }}</td>
+            <td> {{ item.usuario }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/create">Crear nuevo elemento</a>
+</body>
+</html>
